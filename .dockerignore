@@ -1,0 +1,15 @@
+# .dockerignore
+
+# 除外ファイル
+
+# 除外フォルダ
+.test
+
+# 一般的な除外パターン
+.venv
+.git
+.gitignore
+.dockerignore
+.vscode
+__pycache__
+npm-debug.log
