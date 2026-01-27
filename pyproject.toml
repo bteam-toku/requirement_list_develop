@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "requirement_list"
+version = "0.1.0"
+
+# 依存ライブラリ
+dependencies = [
+    "pandas",
+    "openpyxl",
+    "PyYAML",
+    "bteam_utils @ git+https://github.com/bteam-toku/bteam_utils.git",
+]
+
+[tool.setuptools]
+packages = { find = {} }
