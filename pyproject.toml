@@ -5,8 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "requirement_list"
 version = "0.1.0"
-
-# 依存ライブラリ
+requires-python = ">=3.14"
 dependencies = [
     "pandas",
     "openpyxl",
@@ -14,5 +13,10 @@ dependencies = [
     "bteam_utils @ git+https://github.com/bteam-toku/bteam_utils.git",
 ]
 
+[project.scripts]
+export = "requirement_list.__main__:main"
+requirement_list = "requirement_list.__main__:main"
+
 [tool.setuptools]
-packages = { find = {} }
+package-dir = { "" = "src" }
+packages = { find = { where = ["src"] } }

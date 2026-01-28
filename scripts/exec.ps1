@@ -8,7 +8,7 @@ function Invoke-Batch {
     $fullCustomizePath = Join-Path $fullCurrentPath "customizes"
     docker run -it --rm `
         -v "$($fullCurrentPath):/data" `
-        -v "$($fullCustomizePath):/app/requirement_list/customizes" `
+        -v "$($fullCustomizePath):/app/src/requirement_list/customizes" `
         ghcr.io/bteam-toku/requirement_list:latest $project
 }
 

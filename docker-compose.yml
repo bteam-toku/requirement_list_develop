@@ -1,5 +1,5 @@
 services:
-  psd_maskdata:
+  requirement_list:
     build: .
     image: ghcr.io/bteam-toku/requirement_list:latest
     container_name: requirement_list_container
@@ -7,4 +7,4 @@ services:
       - IS_DOCKER=true
     volumes:
       - .:/data
-      - ./customizes:/app/requirement_list/customizes
+      - ./customizes:/app/src/requirement_list/customizes

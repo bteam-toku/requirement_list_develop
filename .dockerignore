@@ -1,15 +1,19 @@
-# .dockerignore
-
-# 除外ファイル
-
-# 除外フォルダ
-.test
-
-# 一般的な除外パターン
-.venv
-.git
+# 設定・Git関連
+.git/
 .gitignore
 .dockerignore
-.vscode
-__pycache__
+.vscode/
+
+# Python 実行・ビルド関連
+__pycache__/
+*.egg-info/
+dist/
+build/
+.venv/
+.test/
+.ruff_cache/
+.pytest_cache/
+
+# ログ・その他
 npm-debug.log
+*.log

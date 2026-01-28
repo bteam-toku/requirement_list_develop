@@ -4,7 +4,7 @@ function Invoke-Batch {
         [string]$project
     )
     # requirement_listモジュールの実行
-    py -m requirement_list $project
+    uv run export $project
 }
 
 # 一つ上の親ディレクトリをカレントフォルダリに設定（環境に合わせて変更してください）
